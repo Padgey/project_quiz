@@ -1,7 +1,7 @@
 //Database
 const questionsDatabase = {
     citizenshipQuiz: {
-        question01: {
+        1: {
             question: "What was the last battle between Great Britain and France?",
             answers: {
                 1: "The Battle of Trafalgar",
@@ -11,7 +11,7 @@ const questionsDatabase = {
                 correctAnswer: 2 
             }
         },
-        question02: {
+        2: {
             question: "Which flower is associated with Wales?",
             answers: {
                 1: "Daffodil",
@@ -21,7 +21,7 @@ const questionsDatabase = {
                 correctAnswer: 1 
             }
         },
-        question03: {
+        3: {
             question: "How often are general elections in the UK?",
             answers: {
                 1: "Every 3 years",
@@ -32,4 +32,17 @@ const questionsDatabase = {
             }
         }
     }
-}
+};
+
+//DOM structure
+const question = document.getElementById("question");
+const nextButton = document.getElementById("nextButton");
+
+//Functions
+const nextQuestion = function() {
+    let questionNumber = question.innerHTML[0];
+    console.log(`${questionNumber}`);
+};
+
+//EventListeners
+nextButton.addEventListener("click", nextQuestion);
