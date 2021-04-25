@@ -1,0 +1,57 @@
+/*Overall styling*/
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: none;
+    text-align: right;
+}
+
+h1 {
+  text-align: center;  
+}
+
+#progressTracker {
+    display: flex;
+    margin-top: 50px;
+}
+
+.questionBar {
+    background-color: red;
+    padding: 5px 10px;
+    margin: 5px 4px;
+}
+
+#quizContainer {
+    margin-top: 10px;
+    width: 60%;
+}
+
+#answersContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.possibleAnswer {
+    background-color: rgb(75, 75, 75);
+    margin: 5px 20px;
+    cursor: pointer;
+    width: 70%;
+}
+
+#nextButton {
+    float: right;
+    margin-top: 10px;
+    margin-right: 125px;
+}
+
+.correct {
+    background-color: darkgreen;
+}
+
+.incorrect {
+    background-color: darkred;
+}
