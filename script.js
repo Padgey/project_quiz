@@ -1,48 +1,96 @@
 //Database
 const questionsDatabase = {
     citizenshipQuiz: {
-        1: {
+        "1": {
             question: "What was the last battle between Great Britain and France?",
             answers: {
-                1: "The Battle of Trafalgar",
-                2: "The Battle of Waterloo",
-                3: "The Battle of Hastings",
-                4: "The Battle of Agincourt",
-                correctAnswer: 2 
+                "one": "The Battle of Trafalgar",
+                "two": "The Battle of Waterloo",
+                "three": "The Battle of Hastings",
+                "four": "The Battle of Agincourt",
+                correctAnswer: "two" 
             }
         },
-        2: {
+        "2": {
             question: "Which flower is associated with Wales?",
             answers: {
-                1: "Daffodil",
-                2: "Rose",
-                3: "Shamrock",
-                4: "Thistle",
-                correctAnswer: 1 
+                "one": "Daffodil",
+                "two": "Rose",
+                "three": "Shamrock",
+                "four": "Thistle",
+                correctAnswer: "one" 
             }
         },
-        3: {
+        "3": {
             question: "How often are general elections in the UK?",
             answers: {
-                1: "Every 3 years",
-                2: "Every 4 years",
-                3: "Every 5 years",
-                4: "Every 6 years",
-                correctAnswer: 3 
+                "one": "Every 3 years",
+                "two": "Every 4 years",
+                "three": "Every 5 years",
+                "four": "Every 6 years",
+                correctAnswer: "three" 
             }
         }
     }
 };
 
+//Global variables
+currentQuestionNumber = 1;
+numberOfQuestions = 3;
+
 //DOM structure
 const question = document.getElementById("question");
+const questionContainer = document.getElementById("questionContainer");
+const answerA = document.getElementById("answerA");
+const answerB = document.getElementById("answerB");
+const answerC = document.getElementById("answerC");
+const answerD = document.getElementById("answerD");
 const nextButton = document.getElementById("nextButton");
 
 //Functions
-const nextQuestion = function() {
-    let questionNumber = question.innerHTML[0];
-    console.log(`${questionNumber}`);
+const displayNextQuestion = function() {
+    if (currentQuestionNumber === numberOfQuestions) {
+        console.log("Reached the end of the quiz")
+        return
+    } else {
+        currentQuestionNumber++;
+        let nextQuestion = generateQuestionHTML(currentQuestionNumber);
+        questionContainer.innerHTML = nextQuestion;
+    }   
+};
+
+const generateQuestionHTML = function(number) {
+    let question = questionsDatabase.citizenshipQuiz[number].question;
+    let answerOne = questionsDatabase.citizenshipQuiz[number].answers.one;
+    let answerTwo = questionsDatabase.citizenshipQuiz[number].answers.two;
+    let answerThree = questionsDatabase.citizenshipQuiz[number].answers.three;
+    let answerFour = questionsDatabase.citizenshipQuiz[number].answers.four;
+
+    const questionHTML = `<h2 id="question">${number}. ${question}</h2>
+    <div id="answersContainer">
+        <div class="possibleAnswer" id="answerA">${answerOne}</div>
+        <div class="possibleAnswer" id="answerB">${answerTwo}</div>
+        <div class="possibleAnswer" id="answerC">${answerThree}</div>
+        <div class="possibleAnswer" id="answerD">${answerFour}</div>
+    </div>`;
+
+    console.log(questionHTML);
+
+    return questionHTML
+};
+
+const checkAnswer = function(selectedAnswer) {
+    let correctAnswer = questionsDatabase.citizenshipQuiz[currentQuestionNumber].answers.correctAnswer
+    console.log(`selectedAnswer: ${selectedAnswer}`);
+    console.log(`correctAnswer: ${correctAnswer}`);
 };
 
 //EventListeners
-nextButton.addEventListener("click", nextQuestion);
+answerA.addEventListener("click", checkAnswer("one"));
+answerB.addEventListener("click", checkAnswer("two"));
+answerC.addEventListener("click", checkAnswer("three"));
+answerD.addEventListener("click", checkAnswer("four"));
+nextButton.addEventListener("click", displayNextQuestion);
+
+
+//How to pass argument into EventListener Function without invoking?

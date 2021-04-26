@@ -43,9 +43,8 @@ h1 {
 }
 
 #nextButton {
-    float: right;
     margin-top: 10px;
-    margin-right: 125px;
+    margin-left: 500px;
 }
 
 .correct {
