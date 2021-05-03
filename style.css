@@ -16,6 +16,12 @@ h1 {
 #progressTracker {
     display: flex;
     margin-top: 50px;
+    flex-direction: column;
+}
+
+#questionBars {
+    display: flex;
+    margin-top: 50px;
 }
 
 .questionBar {

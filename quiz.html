@@ -1,34 +1,39 @@
 <DOCTYPE! html>
 <html>
-    <head>
-        <title>Quiz</title>
-        <link href="reset.css" rel="stylesheet" type="text/css">
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <script async="async" src="script.js"></script>
-    </head>
-    <body>
-        <nav>
-            <button>New Quiz</button>
-            <button>Load Quiz</button>
-            <button>Save Quiz</button>
-            <button>Show/Hide</button>
-            <button>Exit</button>
-        </nav>
-        <h1>Javascript Quiz</h1>
-        <div id="progressTracker">
-            <div class="questionBar">1</div>
-            <div class="questionBar">2</div>
-            <div class="questionBar">3</div>
+  <head>
+    <title>Quiz</title>
+    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script async="async" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <button>New Quiz</button>
+      <button>Load Quiz</button>
+      <button>Save Quiz</button>
+      <button>Show/Hide</button>
+      <button>Exit</button>
+    </nav>
+    <h1>Javascript Quiz</h1>
+    <div id="progressTracker">
+      <div id="questionBars">
+        <div class="questionBar">1</div>
+        <div class="questionBar">2</div>
+        <div class="questionBar">3</div>
+      </div>
+      <div id="progressPercentage">
+        Question - 1 of 3 | Score - 0 out of 0 - 0%
+      </div>
+    </div>
+    <div id="questionContainer">
+      <h2 id="question">1. What was the last battle between Great Britain and France?</h2>
+        <div id="answersContainer">
+          <div class="possibleAnswer" id="one">The Battle of Trafalgar</div>
+          <div class="possibleAnswer" id="two">The Battle of Waterloo</div>
+          <div class="possibleAnswer" id="three">The Battle of Hastings</div>
+          <div class="possibleAnswer" id="four">The Battle of Agincourt</div>
         </div>
-        <div id="questionContainer">
-            <h2 id="question">1. What was the last battle between Great Britain and France?</h2>
-            <div id="answersContainer">
-                <div class="possibleAnswer" id="answerA">The Battle of Trafalgar</div>
-                <div class="possibleAnswer" id="answerB">The Battle of Waterloo</div>
-                <div class="possibleAnswer" id="answerC">The Battle of Hastings</div>
-                <div class="possibleAnswer" id="answerD">The Battle of Agincourt</div>
-            </div>
-        </div>
-        <button id="nextButton">Next</button>
-    </body>
+    </div>
+    <button id="nextButton">Next</button>
+  </body>
 </html>
