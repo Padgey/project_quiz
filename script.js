@@ -91,8 +91,15 @@ const generateQuestionHTML = function(number) {
     console.log(questionHTML);
     return
 };
-const updateProgress = function() {
+const updateProgress = function(answerIsCorrect) {
     //Progress Bar
+    let currentQuestionBar = document.getElementById(`bar${currentQuestionNumber}`);
+    if (answerIsCorrect === true) {
+        currentQuestionBar.style.backgroundColor = "green";
+    } else {
+        currentQuestionBar.style.backgroundColor = "red";
+    };
+    
     //Score 
     let percentageCorrect = Math.round(numCorrectAnswers / numAnsweredQuestions * 100);
     let progressString = 
@@ -116,7 +123,7 @@ const executeAnswer = function(selectedAnswer) {
     if (currentQuestionIsUnanswered) {
         let answerIsCorrect = checkAnswer(selectedAnswer);
         let answerDiv = document.getElementById(selectedAnswer);
-        updateProgress();
+        updateProgress(answerIsCorrect);
         currentQuestionIsUnanswered = false;
         if (answerIsCorrect) {
             answerDiv.style.backgroundColor = "darkgreen";
