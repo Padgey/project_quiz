@@ -4,25 +4,34 @@ body {
     color: white;
 }
 
+.leftAlign {
+    float: left;
+}
+
+.rightAlign {
+    float: right;
+}
+
 nav {
-    display: none;
-    text-align: right;
+    display: block;
 }
 
 h1 {
-    margin-top: 25px;
-  text-align: center;  
+    text-align: center;  
+}
+
+#quizSelector {
+    height: 30px;
+    display: none;
 }
 
 #progressTracker {
     display: flex;
-    margin-top: 50px;
     flex-direction: column;
 }
 
 #progressBar {
     display: flex;
-    margin-top: 50px;
 }
 
 .progressNode {
@@ -46,7 +55,7 @@ h1 {
     background-color: rgb(75, 75, 75);
     margin: 5px 20px;
     cursor: pointer;
-    width: 70%;
+    width: 40%;
 }
 
 #nextButton {

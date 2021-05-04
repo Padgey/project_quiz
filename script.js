@@ -8,7 +8,7 @@ const questionsDatabase = {
                 "two": "The Battle of Waterloo",
                 "three": "The Battle of Hastings",
                 "four": "The Battle of Agincourt",
-                correctAnswer: "two" 
+                "correctAnswer": "two" 
             }
         },
         "2": {
@@ -18,7 +18,7 @@ const questionsDatabase = {
                 "two": "Rose",
                 "three": "Shamrock",
                 "four": "Thistle",
-                correctAnswer: "one" 
+                "correctAnswer": "one" 
             }
         },
         "3": {
@@ -28,7 +28,7 @@ const questionsDatabase = {
                 "two": "Every 4 years",
                 "three": "Every 5 years",
                 "four": "Every 6 years",
-                correctAnswer: "three" 
+                "correctAnswer": "three" 
             }
         },
         "4": {
@@ -38,7 +38,7 @@ const questionsDatabase = {
                 "two": "The Red Cross",
                 "three": "Age UK",
                 "four": "The National Trust",
-                correctAnswer: "four" 
+                "correctAnswer": "four" 
             }
         },
         "5": {
@@ -48,7 +48,7 @@ const questionsDatabase = {
                 "two": "London",
                 "three": "Belfast",
                 "four": "Cardiff",
-                correctAnswer: "one" 
+                "correctAnswer": "one" 
             }
         },
         "6": {
@@ -58,7 +58,7 @@ const questionsDatabase = {
                 "two": "The Home Office",
                 "three": "The State Office",
                 "four": "The Foreign Office",
-                correctAnswer: "two" 
+                "correctAnswer": "two" 
             }
         },
         "6": {
@@ -68,7 +68,7 @@ const questionsDatabase = {
                 "two": "The Home Office",
                 "three": "The State Office",
                 "four": "The Foreign Office",
-                correctAnswer: "two" 
+                "correctAnswer": "two" 
             }
         },
         "7": {
@@ -78,7 +78,7 @@ const questionsDatabase = {
                 "two": "1565",
                 "three": "1665",
                 "four": "1765",
-                correctAnswer: "three" 
+                "correctAnswer": "three" 
             }
         },
         "8": {
@@ -88,7 +88,7 @@ const questionsDatabase = {
                 "two": "Lothians",
                 "three": "Dorset",
                 "four": "Wiltshire",
-                correctAnswer: "four" 
+                "correctAnswer": "four" 
             }
         },
         "9": {
@@ -98,7 +98,7 @@ const questionsDatabase = {
                 "two": "Roomage",
                 "three": "Spacage",
                 "four": "Garden",
-                correctAnswer: "one" 
+                "correctAnswer": "one" 
             }
         },
         "10": {
@@ -108,7 +108,7 @@ const questionsDatabase = {
                 "two": "Tragedy Play",
                 "three": "Huge Display",
                 "four": "Pantomime",
-                correctAnswer: "four" 
+                "correctAnswer": "four" 
             }
         },
         "11": {
@@ -118,7 +118,7 @@ const questionsDatabase = {
                 "two": "Tony Blair",
                 "three": "Margaret Thatcher",
                 "four": "Winston Churchill",
-                correctAnswer: "four" 
+                "correctAnswer": "four" 
             }
         },
         "12": {
@@ -128,20 +128,149 @@ const questionsDatabase = {
                 "two": "Your local MP",
                 "three": "The House of Lords",
                 "four": "The House of Commons",
-                correctAnswer: "one" 
+                "correctAnswer": "one" 
             }
         }
+    },
+
+    oscarsQuiz: {
+        "1": {
+            question: "Who has hosted the Oscars the most times?",
+            answers: {
+                "one": "Chevy Chase",
+                "two": "Bob Hope",
+                "three": "David Letterman",
+                "four": "Billy Crystal",
+                "correctAnswer": "two"
+            }
+        },
+        "2": {
+            question: "Which is the longest film to have won an Oscar for best picture?",
+            answers: {
+                "one": "Titanic",
+                "two": "Genghis Khan",
+                "three": "The Trial of the Chicago 7",
+                "four": "Gone with the Wind",
+                "correctAnswer": "four"
+            }
+        },
+        "3": {
+            question: "Who is the oldest actress to win an Oscar?",
+            answers: {
+                "one": "Maggie Smith",
+                "two": "Diana Ross",
+                "three": "Judi Dench",
+                "four": "Jessica Tandy",
+                "correctAnswer": "four"
+            }
+        },
+        "4": {
+            question: "Who was the first female producer to win an Academy Award for Best Picture?",
+            answers: {
+                "one": "Diablo Cody",
+                "two": "Julia Phillips",
+                "three": "Julia Roberts",
+                "four": "Kathryn Bigelow",
+                "correctAnswer": "two"
+            }
+        },
+        "5": {
+            question: "Which is the longest film to win an Academy Award for Best Foreign Language Film?",
+            answers: {
+                "one": "Parasite",
+                "two": "The Discreet Charm of the Bourgeoisie",
+                "three": "Oldboy",
+                "four": "War and Peace",
+                "correctAnswer": "four"
+            }
+        },
+        "6": {
+            question: "Who was the first woman to win an Oscar for best director?",
+            answers: {
+                "one": "Sofia Coppola",
+                "two": "Chloe Zhao",
+                "three": "Kathryn Bigelow",
+                "four": "Frances McDormand",
+                "correctAnswer": "three"
+            }
+        },
+        "7": {
+            question: "Which was the first animated film to be nominated for an Oscar for Best Picture?",
+            answers: {
+                "one": "Toy Story",
+                "two": "Beauty and the Beast",
+                "three": "Up",
+                "four": "The Lion King",
+                "correctAnswer": "two"
+            }
+        },
+        "8": {
+            question: "In which year was the first Academy Awards?",
+            answers: {
+                "one": "1925",
+                "two": "1929",
+                "three": "1937",
+                "four": "1947",
+                "correctAnswer": "two"
+            }
+        },
+        "9": {
+            question: "What was the original title of the Best Picture category?",
+            answers: {
+                "one": "Outstanding Picture",
+                "two": "Best Motion Picture",
+                "three": "Outstanding Motion Picture",
+                "four": "unique and Artistic Picture",
+                "correctAnswer": "one"
+            }
+        },
+        "10": {
+            question: "Which movie was the Best Picture winner in 1963, when the category was renamed to Best Picture?",
+            answers: {
+                "one": "Lolita",
+                "two": "To Kill A Mockingbird",
+                "three": "Lawrence of Arabia",
+                "four": "The Miracle Worker",
+                "correctAnswer": "three"
+            }
+        },
+        "11": {
+            question: "Who has won the Best Actor the most times?",
+            answers: {
+                "one": "Daniel Day-Lewis",
+                "two": "Peter O'Toole",
+                "three": "Laurence Olivier",
+                "four": "Anthony Hopkins",
+                "correctAnswer": "one"
+            }
+        },
+        "12": {
+            question: "Where are the Academy Awards held?",
+            answers: {
+                "one": "The Beverly Hilton, Los Angeles",
+                "two": "The Plaza Hotel, New York",
+                "three": "The Shrine Auditorium, Los Angeles",
+                "four": "The Dolby Theatre, Los Angeles",
+                "correctAnswer": "four"
+            }
+        },
     }
 };
 
 //Global variables
+let currentQuiz = questionsDatabase.citizenshipQuiz;
 let currentQuestionNumber = 1;
-let numberOfQuestions = Object.keys(questionsDatabase.citizenshipQuiz).length;
+let numberOfQuestions = Object.keys(currentQuiz).length;
 let currentQuestionIsUnanswered = true;
 let numAnsweredQuestions = 0;
 let numCorrectAnswers = 0;
 
 //DOM structure
+const showHideButton = document.getElementById("showHideButton");
+const loadQuizButton = document.getElementById("loadQuizButton");
+const quizSelector = document.getElementById("quizSelector");
+const selectCitizenshipButton = document.getElementById("selectCitizenshipButton");
+const selectOscarsButton = document.getElementById("selectOscarsButton");
 const progressTracker = document.getElementById("progressTracker");
 const progressBar = document.getElementById("progressBar");
 const progressPercentage = document.getElementById("progressPercentage")
@@ -153,8 +282,26 @@ const three = document.getElementById("three");
 const four = document.getElementById("four");
 const nextButton = document.getElementById("nextButton");
 
+//Navigation Bar Functions
+const showPossibleQuizes = function() {
+    (quizSelector.style.display === "block") ? quizSelector.style.display = "none" : quizSelector.style.display = "block";
+};
+
 //Functions
-const loadQuiz = function() {
+const loadQuiz = function(selectedQuiz) {
+    //Change quiz
+    currentQuiz = selectedQuiz;
+
+    //Clear anything previously loaded
+    progressBar.innerHTML = "";
+    progressPercentage.innerHTML = "";
+    currentQuestionNumber = 1;
+    numberOfQuestions = Object.keys(currentQuiz).length;
+    currentQuestionIsUnanswered = true;
+    numAnsweredQuestions = 0;
+    numCorrectAnswers = 0;    
+    resetQuestionStyling();
+
     //Generate progress bars
     for (let i = 1; i < numberOfQuestions + 1; i++) {
         let generatedDiv = document.createElement("div");
@@ -169,11 +316,11 @@ const loadQuiz = function() {
     progressPercentage.innerHTML = progressString;
 
     //Generate first question
-    question.innerHTML = `${currentQuestionNumber}. ${questionsDatabase.citizenshipQuiz[currentQuestionNumber].question}`;
-    one.innerText = questionsDatabase.citizenshipQuiz[currentQuestionNumber].answers["one"];
-    two.innerText = questionsDatabase.citizenshipQuiz[currentQuestionNumber].answers["two"];
-    three.innerText = questionsDatabase.citizenshipQuiz[currentQuestionNumber].answers["three"];
-    four.innerText = questionsDatabase.citizenshipQuiz[currentQuestionNumber].answers["four"];
+    question.innerHTML = `${currentQuestionNumber}. ${currentQuiz[currentQuestionNumber].question}`;
+    one.innerText = currentQuiz[currentQuestionNumber].answers["one"];
+    two.innerText = currentQuiz[currentQuestionNumber].answers["two"];
+    three.innerText = currentQuiz[currentQuestionNumber].answers["three"];
+    four.innerText = currentQuiz[currentQuestionNumber].answers["four"];
 };
 const resetQuestionStyling = function() {
     one.style.border = "medium none";
@@ -201,11 +348,11 @@ const displayNextQuestion = function() {
     };   
 };
 const generateQuestionHTML = function(number) {
-    let questionText = questionsDatabase.citizenshipQuiz[number].question;
-    let answerOne = questionsDatabase.citizenshipQuiz[number].answers.one;
-    let answerTwo = questionsDatabase.citizenshipQuiz[number].answers.two;
-    let answerThree = questionsDatabase.citizenshipQuiz[number].answers.three;
-    let answerFour = questionsDatabase.citizenshipQuiz[number].answers.four;
+    let questionText = currentQuiz[number].question;
+    let answerOne = currentQuiz[number].answers.one;
+    let answerTwo = currentQuiz[number].answers.two;
+    let answerThree = currentQuiz[number].answers.three;
+    let answerFour = currentQuiz[number].answers.four;
 
     question.innerHTML = questionText;
     one.innerHTML = answerOne;
@@ -233,7 +380,7 @@ const updateProgress = function(answerIsCorrect) {
     progressPercentage.innerHTML = progressString;
 };
 const checkAnswer = function(selectedAnswer) {
-    let correctAnswer = questionsDatabase.citizenshipQuiz[currentQuestionNumber].answers.correctAnswer;
+    let correctAnswer = currentQuiz[currentQuestionNumber].answers.correctAnswer;
     if (selectedAnswer !== correctAnswer) {
         console.log("Incorrect answer!");
         numAnsweredQuestions++;
@@ -264,6 +411,13 @@ const executeAnswer = function(selectedAnswer) {
 };
 
 //EventListeners
+loadQuizButton.addEventListener("click", showPossibleQuizes);
+selectCitizenshipButton.addEventListener("click", function() {
+    loadQuiz(questionsDatabase.citizenshipQuiz);
+});
+selectOscarsButton.addEventListener("click", function() {
+    loadQuiz(questionsDatabase.oscarsQuiz);
+});
 one.addEventListener("click", function() {
     console.log("Executing answer one...");
     executeAnswer("one");
@@ -280,4 +434,4 @@ four.addEventListener("click", function() {
 nextButton.addEventListener("click", displayNextQuestion);
 
 //Generate Quiz
-loadQuiz();
+loadQuiz(questionsDatabase.citizenshipQuiz);

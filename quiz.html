@@ -8,13 +8,21 @@
   </head>
   <body>
     <nav>
-      <button>New Quiz</button>
-      <button>Load Quiz</button>
-      <button>Save Quiz</button>
-      <button>Show/Hide</button>
-      <button>Exit</button>
+      <div class="leftAlign">
+        <button>New Quiz</button>
+        <button id="loadQuizButton">Load Quiz</button>
+        <button>Save Quiz</button>
+      </div>
+      <div class="rightAlign">
+        <button id="showHideButton">Show/Hide</button>
+        <button>Exit</button>
+      </div>
     </nav>
     <h1>Javascript Quiz</h1>
+    <div id="quizSelector">
+      <button id="selectCitizenshipButton">Citizenship</button>
+      <button id="selectOscarsButton">Academy Awards</button>
+    </div>
     <div id="progressTracker">
       <div id="progressBar"> 
       </div>
