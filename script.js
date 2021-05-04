@@ -266,6 +266,7 @@ let numAnsweredQuestions = 0;
 let numCorrectAnswers = 0;
 
 //DOM structure
+const leftNavigationBar = document.getElementById("leftNavigationBar");
 const showHideButton = document.getElementById("showHideButton");
 const loadQuizButton = document.getElementById("loadQuizButton");
 const quizSelector = document.getElementById("quizSelector");
@@ -285,6 +286,9 @@ const nextButton = document.getElementById("nextButton");
 //Navigation Bar Functions
 const showPossibleQuizes = function() {
     (quizSelector.style.display === "block") ? quizSelector.style.display = "none" : quizSelector.style.display = "block";
+};
+const showHideNavBar = function() {
+    (leftNavigationBar.style.display === "none") ? leftNavigationBar.style.display = "block" : leftNavigationBar.style.display = "none";
 };
 
 //Functions
@@ -411,6 +415,7 @@ const executeAnswer = function(selectedAnswer) {
 };
 
 //EventListeners
+showHideButton.addEventListener("click", showHideNavBar);
 loadQuizButton.addEventListener("click", showPossibleQuizes);
 selectCitizenshipButton.addEventListener("click", function() {
     loadQuiz(questionsDatabase.citizenshipQuiz);
