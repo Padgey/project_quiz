@@ -16,6 +16,10 @@ nav {
     display: block;
 }
 
+#saveQuizButton {
+    display: none;
+}
+
 h1 {
     text-align: center;  
 }

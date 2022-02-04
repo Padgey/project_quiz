@@ -268,6 +268,7 @@ let numCorrectAnswers = 0;
 //DOM structure
 const leftNavigationBar = document.getElementById("leftNavigationBar");
 const showHideButton = document.getElementById("showHideButton");
+const restartQuizButton = document.getElementById("restartQuizButton");
 const loadQuizButton = document.getElementById("loadQuizButton");
 const quizSelector = document.getElementById("quizSelector");
 const selectCitizenshipButton = document.getElementById("selectCitizenshipButton");
@@ -416,6 +417,9 @@ const executeAnswer = function(selectedAnswer) {
 
 //EventListeners
 showHideButton.addEventListener("click", showHideNavBar);
+restartQuizButton.addEventListener("click", function() {
+    loadQuiz(currentQuiz);
+});
 loadQuizButton.addEventListener("click", showPossibleQuizes);
 selectCitizenshipButton.addEventListener("click", function() {
     loadQuiz(questionsDatabase.citizenshipQuiz);
